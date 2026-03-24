@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="mascara-form"></div>
+    <div onclick="esconderForm()" class="mascara-form"></div>
     <header>
         <img src="./img/logo-header.png">
         <a href="">Home</a>
@@ -28,7 +28,7 @@
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
 
-            <button>ENTRE EM CONTATO</button>
+            <button onclick="mostrarForm ()">ENTRE EM CONTATO</button>
             
         </div>
 
@@ -47,14 +47,18 @@
         <img class="link-whatsapp" src="./img/whatsapp.png" alt="whatsapp">
     </a>
 
-    <form class="fale-conosco">
-        <input placeholder="Seu nome">
-        <input placeholder="Seu telefone">
-        <textarea placeholder="Digite seu problema..."></textarea>
-        <button>Pedir orçamento</button>
+    <form 
+        class="fale-conosco"
+        action="https://formcarry.com/s/Pfb38JJAL5u"
+        method="POST"
+        enctype="multipart/form-data">
+            <input placeholder="Seu nome" type="text" name="nome">
+            <input placeholder="Seu telefone" type="tel" name="telefone">
+            <textarea placeholder="Digite seu problema..." name="duvidas"></textarea>
+            <button type="submit">Pedir orçamento</button>
     </form>
 
 
 </body>
-
+    <script src="./scripts.js"></script>
 </html>
